@@ -1,20 +1,10 @@
 {
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["dist", "__tests__", "node_modules"],
   "compilerOptions": {
-    "lib": ["DOM", "DOM.Iterable", "ES2020"],
-    "target": "ES2020",
-    "module": "ES2020",
-    "skipLibCheck": true,
-    "composite": true,
-
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "module": "commonjs",
+    "target": "es2015",
     "jsx": "react",
     "declaration": true,
-    "emitDeclarationOnly": false,
-    "rootDir": ".",
     "outDir": "./dist"
-  }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
 }
