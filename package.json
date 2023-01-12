@@ -1,6 +1,6 @@
 {
   "name": "remix-gitpod-livereload",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "THIS IS A FIX FOR ORIGINAL REMIX LIVE RELOAD TO GET IT WORKING WITH GITPOD",
   "license": "MIT",
   "sideEffects": false,
@@ -21,7 +21,7 @@
     "gitpod",
     "remix"
   ],
-  "author": "Andrea Morone",  
+  "author": "Andrea Morone",
   "bugs": {
     "url": "https://github.com/AndreaMorone/remix-gitpod-livereload/issues"
   },
