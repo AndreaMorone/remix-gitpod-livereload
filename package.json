@@ -35,9 +35,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "react-router-dom": "^6.6.2",
-    "@remix-run/router": "1.2.1",
-    "use-sync-external-store": "1.2.0"
+    
   },
   "files": [
     "dist/",
