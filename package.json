@@ -4,9 +4,9 @@
   "description": "THIS IS A FIX FOR ORIGINAL REMIX LIVE RELOAD TO GET IT WORKING WITH GITPOD",
   "license": "MIT",
   "sideEffects": false,
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "module": "dist/esm/index.js",
+  "main": "dist/Index.js",
+  "typings": "dist/Index.d.ts",
+  "module": "dist/esm/Index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --build"
