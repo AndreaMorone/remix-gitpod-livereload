@@ -1,6 +1,6 @@
 {
   "name": "remix-gitpod-livereload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "THIS IS A FIX FOR ORIGINAL REMIX LIVE RELOAD TO GET IT WORKING WITH GITPOD",
   "main": "index.ts",
   "scripts": {
