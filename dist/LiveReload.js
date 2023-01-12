@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.LiveReload = void 0;
-const React = require("react");
-exports.LiveReload = process.env.NODE_ENV !== "development"
+import * as React from "react";
+export const LiveReload = process.env.NODE_ENV !== "development"
     ? () => null
     : function LiveReload({ port = Number(process.env.REMIX_DEV_SERVER_WS_PORT || 8002), }) {
         let js = String.raw;
