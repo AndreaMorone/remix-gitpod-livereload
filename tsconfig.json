@@ -1,13 +1,19 @@
 {
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["dist", "__tests__", "node_modules"],
   "compilerOptions": {
-    "module": "ES2020",
+    "lib": ["ES2020"],
+    "module": "CommonJS",
     "target": "ES2020",
+    "skipLibCheck": true,
+    "composite": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "strict": true,
     "jsx": "react",
     "declaration": true,
+    "emitDeclarationOnly": false,
     "rootDir": ".",
     "outDir": "./dist"
-  },
-  "include": ["**/*.ts", "**/*.tsx"],
+  }
 }
