@@ -9,7 +9,7 @@
   "module": "dist/esm/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc --build"
   },
   "repository": {
     "type": "git",
@@ -38,5 +38,11 @@
     "react-router-dom": "^6.6.2",
     "@remix-run/router": "1.2.1",
     "use-sync-external-store": "1.2.0"
-  }
+  },
+  "files": [
+    "dist/",
+    "CHANGELOG.md",
+    "LICENSE.md",
+    "README.md"
+  ]
 }

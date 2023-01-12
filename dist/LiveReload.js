@@ -1,28 +1,14 @@
 import * as React from "react";
-
-export const LiveReload =
-  process.env.NODE_ENV !== "development"
+export const LiveReload = process.env.NODE_ENV !== "development"
     ? () => null
-    : function LiveReload({
-      port = Number(process.env.REMIX_DEV_SERVER_WS_PORT || 8002),      
-    }: {
-      port?: number;
-      /**
-       * @deprecated this property is no longer relevant.
-       */      
-    }) {
-      let js = String.raw;
-      return (
-        <script         
-          suppressHydrationWarning
-          dangerouslySetInnerHTML={{
-            __html: js`
+    : function LiveReload({ port = Number(process.env.REMIX_DEV_SERVER_WS_PORT || 8002), }) {
+        let js = String.raw;
+        return (React.createElement("script", { suppressHydrationWarning: true, dangerouslySetInnerHTML: {
+                __html: js `
                   function remixLiveReloadConnect(config) {
                     let protocol = location.protocol === "https:" ? "wss:" : "ws:";
                     let host = location.hostname;
-                    let socketPath = protocol + "//" + host + ":" + ${String(
-              port
-            )} + "/socket";
+                    let socketPath = protocol + "//" + host + ":" + ${String(port)} + "/socket";
                     let ws;
                     if(host.includes(".gitpod.io")){
                       socketPath = protocol + "//" + host.replace("3000",${port}) + "/socket";
@@ -64,7 +50,5 @@ export const LiveReload =
                   }
                   remixLiveReloadConnect();
                 `,
-          }}
-        />
-      );
+            } }));
     };

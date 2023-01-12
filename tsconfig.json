@@ -13,7 +13,7 @@
     "strict": true,
     "jsx": "react",
     "declaration": true,
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": false,
     "rootDir": ".",
     "outDir": "./dist"
   }
