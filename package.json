@@ -1,10 +1,15 @@
 {
   "name": "remix-gitpod-livereload",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "THIS IS A FIX FOR ORIGINAL REMIX LIVE RELOAD TO GET IT WORKING WITH GITPOD",
-  "main": "index.ts",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/esm/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -16,10 +21,22 @@
     "gitpod",
     "remix"
   ],
-  "author": "Andrea Morone",
-  "license": "ISC",
+  "author": "Andrea Morone",  
   "bugs": {
     "url": "https://github.com/AndreaMorone/remix-gitpod-livereload/issues"
   },
-  "homepage": "https://github.com/AndreaMorone/remix-gitpod-livereload#readme"
+  "homepage": "https://github.com/AndreaMorone/remix-gitpod-livereload#readme",
+  "devDependencies": {
+    "@remix-run/server-runtime": "1.10.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^13.3.0",
+    "abort-controller": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.6.2",
+    "@remix-run/router": "1.2.1",
+    "use-sync-external-store": "1.2.0"
+  }
 }
