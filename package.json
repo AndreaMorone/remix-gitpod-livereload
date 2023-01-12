@@ -1,8 +1,8 @@
 {
   "name": "remix-gitpod-livereload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "THIS IS A FIX FOR ORIGINAL REMIX LIVE RELOAD TO GET IT WORKING WITH GITPOD",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
