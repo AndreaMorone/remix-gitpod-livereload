@@ -1,0 +1,25 @@
+{
+  "name": "remix-gitpod-livereload",
+  "version": "1.0.0",
+  "description": "THIS IS A FIX FOR ORIGINAL REMIX LIVE RELOAD TO GET IT WORKING WITH GITPOD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaMorone/remix-gitpod-livereload.git"
+  },
+  "keywords": [
+    "remix-run",
+    "gitpod-remix",
+    "gitpod",
+    "remix"
+  ],
+  "author": "Andrea Morone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaMorone/remix-gitpod-livereload/issues"
+  },
+  "homepage": "https://github.com/AndreaMorone/remix-gitpod-livereload#readme"
+}
